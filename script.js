@@ -52,7 +52,7 @@ function cotacao() {
     })
     .fail(function (jqXHR, textStatus, data) {
       if (jqXHR.responseJSON.code == "CoinNotExists") {
-        alert("Conversão não existe");
+        alert("Paridade não disponível");
       } else {
         alert("Tenta novamente");
       }
