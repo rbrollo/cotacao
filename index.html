@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cotação Hoje</title>
+  </head>
+  <body>
+    <header><h2>Conversão de Moedas</h2></header>
+    <form>
+      <div>
+        <input type="number" name="qtdMoeda1" id="qtdMoeda1" value="1" />
+        <label for="moeda1">Selecione a moeda 1</label>
+        <select name="moeda1" id="moeda1">
+          <option value="" title="" class="opcoes"></option>
+        </select>
+        <span
+          ><button type="button" onclick="inverter()" title="Inverter Moedas">
+            &lt;--&gt;
+          </button></span
+        >
+        <label for="moeda2">Selecione a moeda 2</label>
+        <select name="moeda2" id="moeda2">
+          <option value="" title="" class="opcoes"></option>
+        </select>
+        <button type="button" onclick="cotacao()">Realizar Conversão</button>
+      </div>
+      <p id="cotacao"></p>
+      <p id="dthrConsulta"></p>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>

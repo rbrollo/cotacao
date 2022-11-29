@@ -1,0 +1,12 @@
+body {
+  background-image: url("https://images.pexels.com/photos/839351/pexels-photo-839351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  background-size: 100vw;
+  font-family: cursive;
+}
+h2 {
+  text-align: center;
+}
