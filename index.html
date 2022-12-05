@@ -5,31 +5,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- importação bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- importação fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Cotação Hoje</title>
   </head>
   <body>
     <header><h2>Conversão de Moedas</h2></header>
-    <form>
-      <div>
-        <input type="number" name="qtdMoeda1" id="qtdMoeda1" value="1" />
-        <label for="moeda1">Selecione a moeda 1</label>
-        <select name="moeda1" id="moeda1">
-          <option value="" title="" class="opcoes"></option>
-        </select>
-        <span
-          ><button type="button" onclick="inverter()" title="Inverter Moedas">
-            &lt;--&gt;
-          </button></span
-        >
-        <label for="moeda2">Selecione a moeda 2</label>
-        <select name="moeda2" id="moeda2">
-          <option value="" title="" class="opcoes"></option>
-        </select>
-        <button type="button" onclick="cotacao()">Realizar Conversão</button>
+    <form class="container">
+      <div class="row">
+        <div class="input-group">
+          <div class="col-1">
+          <input type="number" class="form-control" name="qtdMoeda1" id="qtdMoeda1" value="1" placeholder="Quantidade da moeda para conversão"/>
+          </div>
+          <label class="input-group-text" for="moeda1">Moeda 1</label>
+          <select name="moeda1" id="moeda1" class="form-select">
+            <option value="" title="" class="opcoes"></option>
+          </select>
+          <span>
+            <button type="button" class="btn btn-primary" onclick="inverter()" title="Inverter Moedas">
+              <i class="fa fa-solid fa-right-left"></i>
+            </button></span>
+            <label class="input-group-text" for="moeda2">Moeda 2</label>
+          <select name="moeda2" id="moeda2"  class="form-select">
+            <option value="" title="" class="opcoes"></option>
+          </select>
+          <button type="button" class="btn btn-success" onclick="cotacao()">Realizar Conversão</button>
+        </div>
       </div>
-      <p><h3 id="cotacao"></h3></p>
-      <p><h3 id="dthrConsulta"></h3></p>
     </form>
+
+      <div class="container cotacao">
+        <p><h3 id="cotacao"></h3></p>
+        <p><h3 id="dthrConsulta"></h3></p>
+      </div>
+
   </body>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

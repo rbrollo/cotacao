@@ -1,3 +1,7 @@
+header {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
 body {
   background-image: url("https://images.pexels.com/photos/839351/pexels-photo-839351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
@@ -12,4 +16,7 @@ h2 {
 }
 p {
   margin-top: 50px;
+}
+.cotacao {
+  margin-top: 12vh;
 }

@@ -23,6 +23,7 @@ $(document).ready(
           "</option>"
       );
     }
+    $("#moeda1").val("BRL");
   })
 );
 
